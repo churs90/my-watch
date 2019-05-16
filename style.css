@@ -1,0 +1,154 @@
+.block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 14px solid #FAEBC5;
+    background-color: #1D3962;
+    color: #A98C81;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.clock {
+    position: absolute;
+}
+
+.twelve {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
+.six {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.three {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.nine {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.one {
+    top: 28px;
+    right: 80px;
+}
+
+.seven {
+    bottom: 28px;
+    left: 80px;
+}
+
+.two {
+    right: 35px;
+    top: 75px;
+}
+
+.eight {
+    left: 35px;
+    bottom: 75px;
+}
+
+.ten {
+    left: 35px;
+    top: 75px;
+}
+
+.four {
+    right: 35px;
+    bottom: 75px;
+}
+
+.fife {
+    bottom: 28px;
+    right: 80px;
+}
+
+.eleven {
+    top: 28px;
+    left: 80px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.minute, .secund {
+    position: absolute;
+    width: 2px;
+    margin-left: -1px;
+    height: 120px;
+    left: 50%;
+    top: 49px;
+    background-color: #C7B098;
+    transform-origin: 84% 84%;
+}
+
+.minute:before, .secund:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 6px solid transparent;
+    border-bottom: 10px solid silver;
+    display: block;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hour {
+    position: absolute;
+    width: 4px;
+    margin-left: -2px;
+    height: 85px;
+    left: 50%;
+    top: 81px;
+    transform-origin: 80% 80%;
+    transform: rotateZ(30deg);
+    background-color: #C7B098;
+}
+
+.hour:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 6px solid transparent;
+    border-bottom: 10px solid silver;
+    display: block;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    text-align: center;
+    line-height: 350px;
+    font-family: 'Algerian', sans-serif;
+    color: #86A0A9;
+}
+
+.show {
+    margin-top: 100px;
+    text-align: center;
+}
